@@ -1,17 +1,18 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
-import Logo from '@/public/images/logo.png'
+import Logo from '@/public/images/logo.svg'
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { SVGProps } from "react"
 
 const navLinks = [
-    { href: "#", label: "Home" },
-    { href: "#about", label: "Small business" },
-    { href: "#services", label: "Partners" },
-    { href: "#contact", label: "About us" },
-    { href: "#contact", label: "Case studies" },
+    { href: "#hero", label: "Home" },
+    { href: "#services", label: "Services" },
+    { href: "#trust", label: "Tidelands" },
+    { href: "#testimonials", label: "Testimonials" },
+    { href: "#contact", label: "Contact" }, // this should link to your footer or contact form section
 ];
+
 
 const Header = () => {
     return (

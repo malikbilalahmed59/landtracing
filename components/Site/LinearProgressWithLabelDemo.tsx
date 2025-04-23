@@ -19,14 +19,14 @@ export default function LinearProgressWithLabelDemo() {
         <div className="absolute bg-white rounded-[20px] w-[264px] px-[20px] py-[25px]  lg:left-[-107px] bottom-[56px] lg:block hidden z-30" data-aos="fade-down">
             <div className="w-full mb-[30px]">
                 <div className="flex items-center justify-between mb-[10px]">
-                    <span className="text-sm text-[var(--primary)]">Text Consultations</span>
+                    <span className="text-sm text-[var(--primary)]">Tideland Claims Verified</span>
                     <span className="text-sm text-[var(--primary)]">{progress1}%</span>
                 </div>
                 <Progress value={progress1} className="[&>div]:bg-[var(--cyan-blue)]" />
             </div>
             <div className="w-full">
                 <div className="flex items-center justify-between mb-[10px]">
-                    <span className="text-sm text-[var(--primary)]">Budget management</span>
+                    <span className="text-sm text-[var(--primary)]">Property Reports Delivered</span>
                     <span className="text-sm text-[var(--primary)]">{progress2}%</span>
                 </div>
                 <Progress value={progress2} className="[&>div]:bg-[var(--cyan-blue)]" />

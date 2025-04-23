@@ -6,19 +6,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const data = {
-    badge: "Your Success, Our Priority",
-    heading: "Transform Your Business with Expert Accounting Services",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    badge: "Precision You Can Trust",
+    heading: "Expert Mapping Searches & Reports",
+    description: `Land Tracing sets the benchmark in accurate, reliable, and certified mapping reports. Our dedicated team combines cutting-edge technology with industry-leading expertise to provide detailed public records searches swiftly and dependably, ensuring your decisions are always informed and secure.`,
     buttons: {
         primary: {
-            label: "Get started",
-            href: "",
+            label: "Start Your Search",
+            href: "/get-started",
         },
         secondary: {
-            label: "Get in touch",
-            href: "",
+            label: "Contact Our Experts",
+            href: "/contact",
         },
     },
 };
@@ -47,9 +45,19 @@ const Hero = () => {
                     <div className="relative">
                         {/*<Progress.Line />*/}
                         <LinearProgressWithLabelDemo />
-                        <figure className="mb-0" data-aos="fade-up">
-                            <Image src={Banner_img} width={480} height={480} alt="Banner_img" className="rounded-[20px] lg:m-0 mx-auto md:w-auto md:h-auto w-[400px] h-auto" />
-                        </figure>
+                        <figure
+    className="mb-0 relative w-full h-[480px] max-w-[480px] mx-auto rounded-[20px] overflow-hidden"
+    data-aos="fade-up"
+>
+    <Image
+        src={Banner_img}
+        alt="Banner_img"
+        fill
+        className="object-cover rounded-[20px]"
+        priority
+    />
+</figure>
+
                     </div>
                 </div>
             </div>

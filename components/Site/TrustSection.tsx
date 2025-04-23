@@ -1,17 +1,17 @@
 import GenericBox from "@/components/Site/GenericBox";
-import accountant_img from "@/public/images/accountant-img.jpg"
+import mapping_expert_img from "@/public/images/mapping-expert.jpg";
 
 const TrustSection = () => {
     return (
         <GenericBox
             columnChange=""
-            title={"Trust With Our Best Accountants"}
-            image={accountant_img}
-            description={"Invess is the number one accounting & finance back office support provider in the market. We're pride of ourselves on transforming our clients for the better, helping them to grow & making them more resilient to in the business."}
-            countValue1={"500"}
-            countValue2={"98"}
-            countValue1dec={"Successful audits"}
-            countValue2dec={"On-Time Filing Rate"} />
+            title={"Trusted by Professionals in Land Mapping & Search"}
+            image={mapping_expert_img}
+            description={"Land Tracing is the go-to partner for certified property research, GIS-based reports, and land data services. Our clients rely on our accuracy, speed, and deep domain expertise to support critical land decisions across New Jersey and beyond."}
+            countValue1={"1000+"}
+            countValue2={"99.5%"}
+            countValue1dec={"Certified Reports Delivered"}
+            countValue2dec={"Accuracy Rating from Clients"} />
     );
 };
 
