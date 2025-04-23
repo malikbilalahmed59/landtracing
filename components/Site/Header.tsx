@@ -14,7 +14,7 @@ const navLinks = [
 
 const Header = () => {
     return (
-        <header className="w-full absolute top-[50px]">
+        <header className="w-full absolute md:top-[50px] top-[30px]">
             <div className="container 2xl:px-0 px-[30px] mx-auto flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2" prefetch={false}>
                     <Image src={Logo} quality={100} height={40} width={148} className="max-xsm:w-[120px]" alt='Aminu Logo' />
@@ -24,7 +24,7 @@ const Header = () => {
                         <Link
                             key={index}
                             href={link.href}
-                            className="text-base font-medium text-[var(--primary)]"
+                            className="text-base font-medium text-[var(--primary)] nav-hover hover:text-[#882ee0]"
                             prefetch={false}
                         >
                             {link.label}
@@ -33,21 +33,21 @@ const Header = () => {
                 </nav>
                 <div className="flex items-center lg:gap-0 gap-2">
                     <Link href="#contact" className=" max-xsm:hidden bg-white inline-block font-semibold rounded-[10px]
-                    2xl:p-[11px_46px] lg:p-[11px_36px] sm:p-[9px_26px] p-[9px_26px] xl:text-base sm:text-sm text-[12px]">Sign in</Link>
-                    <Sheet>
+                    2xl:p-[11px_46px] lg:p-[11px_36px] sm:p-[9px_26px] p-[9px_26px] xl:text-base sm:text-sm text-[12px] hover:bg-gray-100 transition-all duration-300 ease-in-out  hover:-translate-y-[5px] ">Sign in</Link>
+                    <Sheet >
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="rounded-full lg:hidden p-0">
                                 <MenuIcon className="!h-[30px] !w-[30px] text-primary" />
                                 <span className="sr-only">Toggle navigation menu</span>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="left" className="md:hidden">
+                        <SheetContent side="left" className="lg:hidden !borde-0 bg-[var(--cyan-blue)] p-5">
                             <div className="grid gap-4 p-4">
                                 {navLinks.map((link, index) => (
                                     <Link
                                         key={index}
                                         href={link.href}
-                                        className="text-base font-medium text-[var(--primary)]"
+                                        className="text-base font-medium text-white footer-hover"
                                         prefetch={false}
                                     >
                                         {link.label}

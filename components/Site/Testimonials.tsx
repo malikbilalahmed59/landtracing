@@ -70,20 +70,20 @@ export default function Testimonials() {
     }, [api]);
 
     return (
-        <div className="mx-auto pt-[80px] pb-[120px]">
-            <div className="container mx-auto">
+        <div className="mx-auto 2xl:pt-[80px] lg:pt-[70px] sm:pt-[50px] pt-[40px] 2xl:pb-[120px] xl:pb-[100px] lg:pb-[90px] sm:pb-[70px] pb-[50px]">
+            <div className="container mx-auto 2xl:px-0 sm:px-[30px] px-[20px]">
                 <div className="relative">
                     <Carousel setApi={setApi} className="w-full">
                         <CarouselContent>
                             {testimonials.map((testimonial, index) => (
                                 <CarouselItem key={index} className="">
-                                    <Card className="bg-white rounded-[20px] border-0 shadow-none p-[30px] h-full">
+                                    <Card className="bg-white rounded-[20px] border-0 shadow-none sm:p-[30px] p-[20px] h-full">
                                         <CardContent className="flex flex-col p-0 grow">
-                                            <div className="flex flex-row gap-4 items-start mb-[56px] w-[90%]">
+                                            <div className="flex flex-row gap-4 items-start xl:mb-[56px] lg:mb-[48px] mb-[38px] lg:w-[90%]">
                                                 <Quote className="shrink-0 relative top-[6px]" />
-                                                <p className="text-[24px]">{testimonial.text}</p>
+                                                <p className="xl:text-[24px] lg:text-[22px] sm:text-[18px] text-base">{testimonial.text}</p>
                                             </div>
-                                            <div className="flex items-center gap-2 mt-auto">
+                                            <div className="flex items-center gap-3 mt-auto">
                                                 <figure>
                                                     <Image
                                                         src={testimonial.imageSrc}
@@ -94,8 +94,8 @@ export default function Testimonials() {
                                                     />
                                                 </figure>
                                                 <div>
-                                                    <h6 className="font-semibold text-[18px]">{testimonial.name}</h6>
-                                                    <span className="text-sm">{testimonial.title}</span>
+                                                    <h6 className="font-semibold lg:text-[18px] text-sm">{testimonial.name}</h6>
+                                                    <span className="lg:text-sm text-[12px]">{testimonial.title}</span>
                                                 </div>
                                             </div>
                                         </CardContent>
@@ -104,7 +104,7 @@ export default function Testimonials() {
                             ))}
                         </CarouselContent>
                     </Carousel>
-                    <div className="flex items-center justify-center gap-2 absolute bottom-0 right-[30px] bottom-[30px]">
+                    <div className="flex items-center justify-center gap-2 sm:absolute  sm:right-[30px] sm:bottom-[30px] sm:mt-0 mt-4">
                         {Array.from({ length: count }).map((_, index) => (
                             <button
                                 key={index}

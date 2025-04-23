@@ -9,8 +9,8 @@ interface Props {
 const GenericHeading = ({ title, linkTitle, linkHref }: Props) => {
     return (
         <div className="flex items-center justify-between sm:flex-row flex-col gap-4">
-            <div className="lg:w-full sm:w-[60%] w-full">
-                <h3 className="text-white xl:text-[36px] lg:text-[32px] sm:text-[28px] text-[26px] lg:leading-[44px] leading-[36px] font-semibold sm:text-left text-center">{title}</h3>
+            <div className="lg:w-full md:w-[60%] w-full">
+                <h3 className="text-white xl:text-[36px] lg:text-[32px] sm:text-[24px] text-[22px] lg:leading-[44px] md:leading-[36px] leading-[30px] font-semibold sm:text-left text-center">{title}</h3>
             </div>
             <div>
                 <Link href={linkHref} className={buttonVariants({ variant: "secondary" })}>{linkTitle}</Link>
