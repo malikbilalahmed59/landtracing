@@ -5,8 +5,8 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] px-[38px] py-[15px] " +
-    "text-base font-semibold transition-all disabled:pointer-events-none disabled:opacity-50" +
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] md:px-[38px] sm:px-[32px] px-[24px] 2xl:py-[15px] sm:py-[13px] py-[10px] " +
+    "xl:text-base text-sm font-semibold transition-all disabled:pointer-events-none disabled:opacity-50" +
     " [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0" +
     " outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] " +
     "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",

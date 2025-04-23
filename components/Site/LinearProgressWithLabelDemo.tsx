@@ -16,7 +16,7 @@ export default function LinearProgressWithLabelDemo() {
     }, []);
 
     return (
-        <div className="absolute bg-white rounded-[20px] w-[264px] px-[20px] py-[25px] bottom-0 left-[-107px] bottom-[56px]">
+        <div className="absolute bg-white rounded-[20px] w-[264px] px-[20px] py-[25px]  lg:left-[-107px] bottom-[56px] lg:block hidden">
             <div className="w-full mb-[30px]">
                 <div className="flex items-center justify-between mb-[10px]">
                     <span className="text-sm text-[var(--primary)]">Text Consultations</span>

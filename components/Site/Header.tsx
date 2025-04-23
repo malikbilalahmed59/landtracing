@@ -15,11 +15,11 @@ const navLinks = [
 const Header = () => {
     return (
         <header className="w-full absolute top-[50px]">
-            <div className="container px-[0] max-2lg:px-[1.875rem] max-sm:px-[20px] mx-auto flex items-center justify-between">
+            <div className="container 2xl:px-0 px-[30px] mx-auto flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2" prefetch={false}>
                     <Image src={Logo} quality={100} height={40} width={148} className="max-xsm:w-[120px]" alt='Aminu Logo' />
                 </Link>
-                <nav className="hidden items-center gap-[40px] md:flex">
+                <nav className="hidden items-center 2xl:gap-[40px] gap-[25px] lg:flex">
                     {navLinks.map((link, index) => (
                         <Link
                             key={index}
@@ -31,11 +31,12 @@ const Header = () => {
                         </Link>
                     ))}
                 </nav>
-                <div className="">
-                    <Link href="#contact" className=" max-xsm:hidden bg-white inline-block font-semibold rounded-[10px] p-[11px_46px]">Sign in</Link>
+                <div className="flex items-center lg:gap-0 gap-2">
+                    <Link href="#contact" className=" max-xsm:hidden bg-white inline-block font-semibold rounded-[10px]
+                    2xl:p-[11px_46px] lg:p-[11px_36px] sm:p-[9px_26px] p-[9px_26px] xl:text-base sm:text-sm text-[12px]">Sign in</Link>
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="rounded-full md:hidden">
+                            <Button variant="ghost" size="icon" className="rounded-full lg:hidden p-0">
                                 <MenuIcon className="!h-[30px] !w-[30px] text-primary" />
                                 <span className="sr-only">Toggle navigation menu</span>
                             </Button>
