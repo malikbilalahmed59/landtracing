@@ -2,7 +2,6 @@ import Footer from "@/components/Site/Footer";
 import Header from "@/components/Site/Header";
 import Hero from "@/components/Site/Hero";
 import Services from "@/components/Site/Services";
-import Testimonials from "@/components/Site/Testimonials";
 import HelpSection from "@/components/Site/HelpSection";
 import CallAction from "@/components/Site/CallAction";
 import TrustSection from "@/components/Site/TrustSection";
@@ -17,7 +16,6 @@ export default function Home() {
       <TrustSection/>
       <HelpSection/>
       <AboutSection/>
-      <Testimonials/>
       <CallAction/>
       <Footer />
     </>

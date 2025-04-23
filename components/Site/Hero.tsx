@@ -1,7 +1,7 @@
 import LinearProgressWithLabelDemo from "@/components/Site/LinearProgressWithLabelDemo";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import Banner_img from "@/public/images/banner-img.jpg";
+import Banner_img from "@/public/images/banner-img.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,7 +44,7 @@ const Hero = () => {
                     </div>
                     <div className="relative">
                         {/*<Progress.Line />*/}
-                        <LinearProgressWithLabelDemo />
+                        {/* <LinearProgressWithLabelDemo /> */}
                         <figure
     className="mb-0 relative w-full h-[480px] max-w-[480px] mx-auto rounded-[20px] overflow-hidden"
     data-aos="fade-up"

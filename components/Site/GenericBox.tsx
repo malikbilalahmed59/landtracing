@@ -7,12 +7,11 @@ interface Props {
     columnChange: string,
     description: string,
     countValue1: string,
-    countValue2: string,
     countValue1dec: string,
-    countValue2dec: string,
+    countValue2dec: React.ReactNode,
 }
 
-const GenericBox = ({ title, description, image, countValue1, countValue2, countValue1dec, countValue2dec, columnChange }: Props) => {
+const GenericBox = ({ title, description, image, countValue1, countValue1dec, countValue2dec, columnChange }: Props) => {
     return (
         <div className="2xl:py-[120px]  xl:py-[100px] lg:py-[90px] sm:py-[70px] py-[50px]">
             <div className="container mx-auto 2xl:px-0 sm:px-[30px] px-[20px]">
@@ -34,15 +33,7 @@ const GenericBox = ({ title, description, image, countValue1, countValue2, count
                                 /></div>
                                 <span className="inline-block lg:text-sm text-[12px]">{countValue1dec}</span>
                             </div>
-                            <div data-aos="fade-up">
-                                <div> <NumberTicker
-                                    value={parseInt(countValue2)}
-                                    className="whitespace-pre-wrap lg:text-[24px] text-[20px] font-bold text-black "
-                                />
-                                    <span className="whitespace-pre-wrap lg:text-[24px] text-[20px] font-bold text-black ">%</span>
-                                </div>
-                                <span className="inline-block lg:text-sm text-[12px]">{countValue2dec}</span>
-                            </div>
+
                         </div>
                     </div>
                 </div>

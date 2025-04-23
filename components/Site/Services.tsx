@@ -18,17 +18,18 @@ const services = [
         icon: <MapPinned size={30} className="text-[var(--cyan-blue)]" />,
     },
     {
+        title: "Grant Searches",
+        description:
+            "If a property comes back as claimed, we conduct a thorough search through the Bureau of Tidelands records for any associated grants, leases, or licenses. We deliver all relevant documentation with precision, ensuring compliance, clarity, and confidence in your land transactions.",
+        icon: <Satellite size={30} className="text-[var(--cyan-blue)]" />,
+    },
+    {
         title: "Flood Zone Determination (Coming Soon)",
         description:
             "Our upcoming Flood Zone Determination service will provide detailed mapping, data-driven analysis, and certified accuracy to keep you informed and prepared.",
         icon: <Waves size={30} className="text-[var(--cyan-blue)]" />,
     },
-    {
-        title: "Property PEEK (Aerial Insights)",
-        description:
-            "Our comprehensive and customizable Property PEEK Deluxe reports offer extensive aerial data and metrics, tailored specifically for New Jersey properties.",
-        icon: <Satellite size={30} className="text-[var(--cyan-blue)]" />,
-    },
+
 ];
 
 const Services = () => {

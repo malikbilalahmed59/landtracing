@@ -7,7 +7,7 @@ const HelpSection = () => {
                 <GenericHeading
                     title={"Need Certified Mapping or Land Search Support?"}
                     linkTitle={"Get Started Now"}
-                    linkHref={"/contact"}
+                    linkHref={"#contact"}
                 />
             </div>
         </div>
