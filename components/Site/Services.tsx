@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { CircleDollarSign,BookOpenCheck } from 'lucide-react';
+import { BookOpenCheck, CircleDollarSign } from 'lucide-react';
 
 const data = {
     image: {
@@ -19,7 +18,7 @@ const services = [
         title: "Consultancy",
         description:
             "Auditing advice helps you formulate your strategy for the future business diversifications and better Return on Investment (ROI).",
-        icon: <CircleDollarSign  size={30} className="text-[var(--cyan-blue)]"/>,
+        icon: <CircleDollarSign size={30} className="text-[var(--cyan-blue)]" />,
         image: {
             src: "/images/consultancy.jpg",
             alt: "Consultancy Service",
@@ -29,7 +28,7 @@ const services = [
         title: "Financial Planning",
         description:
             "We help you design customized financial strategies to grow your wealth and secure your future.",
-        icon:     <BookOpenCheck size={30} className="text-[var(--cyan-blue)]"/>,
+        icon: <BookOpenCheck size={30} className="text-[var(--cyan-blue)]" />,
         image: {
             src: "/images/financial-planning.jpg",
             alt: "Financial Planning Service",
@@ -39,7 +38,7 @@ const services = [
         title: "Market Analysis",
         description:
             "Get detailed insights into market trends and customer behavior to stay ahead of the competition.",
-        icon: <CircleDollarSign size={30} className="text-[var(--cyan-blue)]"/>,
+        icon: <CircleDollarSign size={30} className="text-[var(--cyan-blue)]" />,
         image: {
             src: "/images/market-analysis.jpg",
             alt: "Market Analysis Service",
@@ -66,20 +65,20 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
-                        {services.map((service, index) => (
-                            <div data-aos="fade-up" key={index} className="bg-white rounded-[20px] p-[30px] border border-transparent hover:border-[var(--cyan-blue)] transition-all duration-300 ease-in-out group">
-                                {/*<figure>*/}
-                                {/*    <Image src={service.image.src} alt={service.image.alt} />*/}
-                                {/*</figure>*/}
-                                <div className="md:w-[78px] w-[68px] md:h-[78px] h-[68px] flex items-center justify-center bg-[#faf8f6] rounded-full mb-[20px]">
-                                    <span className="group-hover:translate-y-1/2 transition-all duration-300 ease-in-out">{service.icon}</span>
-                                </div>
-                                <h4 className="2xl:text-[24px] sm:text-[20px] text-[18px] font-medium mb-[10px] text-[var(--primary)]">{service.title}</h4>
-                                <p className="md:text-base text-sm text-[var(--primary)] leading-[22px]">{service.description}</p>
+                <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
+                    {services.map((service, index) => (
+                        <div data-aos="fade-up" key={index} className="bg-white rounded-[20px] p-[30px] border border-transparent hover:border-[var(--cyan-blue)] transition-all duration-300 ease-in-out group">
+                            {/*<figure>*/}
+                            {/*    <Image src={service.image.src} alt={service.image.alt} />*/}
+                            {/*</figure>*/}
+                            <div className="md:w-[78px] w-[68px] md:h-[78px] h-[68px] flex items-center justify-center bg-[#faf8f6] rounded-full mb-[20px]">
+                                <span className="group-hover:translate-y-1/2 transition-all duration-300 ease-in-out">{service.icon}</span>
                             </div>
-                        ))}
-                    </div>
+                            <h4 className="2xl:text-[24px] sm:text-[20px] text-[18px] font-medium mb-[10px] text-[var(--primary)]">{service.title}</h4>
+                            <p className="md:text-base text-sm text-[var(--primary)] leading-[22px]">{service.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )

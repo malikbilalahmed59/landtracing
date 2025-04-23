@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
+import { SVGProps } from "react"
 
 const navLinks = [
     { href: "#", label: "Home" },
@@ -63,7 +64,7 @@ const Header = () => {
 }
 
 export default Header
-function MenuIcon(props) {
+function MenuIcon(props: SVGProps<SVGSVGElement>) {
     return (
         <svg
             {...props}

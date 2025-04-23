@@ -7,12 +7,10 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-    type CarouselApi,
+    type CarouselApi
 } from "@/components/ui/carousel";
-import { Quote } from 'lucide-react';
 import { cn } from "@/lib/utils";
+import { Quote } from 'lucide-react';
 import Image from "next/image";
 
 const testimonials = [

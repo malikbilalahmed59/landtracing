@@ -1,10 +1,9 @@
-import React from 'react'
-import { Badge } from "@/components/ui/badge"
-import { Button,buttonVariants } from "@/components/ui/button"
-import Link from "next/link";
-import Image from "next/image";
-import Banner_img from "@/public/images/banner-img.jpg";
 import LinearProgressWithLabelDemo from "@/components/Site/LinearProgressWithLabelDemo";
+import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
+import Banner_img from "@/public/images/banner-img.jpg";
+import Image from "next/image";
+import Link from "next/link";
 
 const data = {
     badge: "Your Success, Our Priority",
@@ -47,9 +46,9 @@ const Hero = () => {
                     </div>
                     <div className="relative">
                         {/*<Progress.Line />*/}
-                       <LinearProgressWithLabelDemo />
+                        <LinearProgressWithLabelDemo />
                         <figure className="mb-0" data-aos="fade-up">
-                            <Image src={Banner_img} width={480} height={480} alt="Banner_img" className="rounded-[20px] lg:m-0 mx-auto md:w-auto md:h-auto w-[400px] h-auto"/>
+                            <Image src={Banner_img} width={480} height={480} alt="Banner_img" className="rounded-[20px] lg:m-0 mx-auto md:w-auto md:h-auto w-[400px] h-auto" />
                         </figure>
                     </div>
                 </div>

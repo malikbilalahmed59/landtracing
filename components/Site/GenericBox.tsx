@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { NumberTicker } from "@/components/magicui/number-ticker";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 interface Props {
     title: string,
-    image:string,
-    columnChange:string,
+    image: string | StaticImport,
+    columnChange: string,
     description: string,
     countValue1: string,
     countValue2: string,
@@ -11,14 +12,14 @@ interface Props {
     countValue2dec: string,
 }
 
-const GenericBox = ({title,description,image,countValue1,countValue2,countValue1dec,countValue2dec,columnChange}:Props) => {
+const GenericBox = ({ title, description, image, countValue1, countValue2, countValue1dec, countValue2dec, columnChange }: Props) => {
     return (
         <div className="2xl:py-[120px]  xl:py-[100px] lg:py-[90px] sm:py-[70px] py-[50px]">
             <div className="container mx-auto 2xl:px-0 sm:px-[30px] px-[20px]">
                 <div className={`flex md:flex-nowrap md:gap-0 gap-5 flex-wrap lg:justify-around justify-between items-center md:text-left text-center ${columnChange}`}>
                     <div className="lg:w-[38.3%] md:w-[48%] w-full">
                         <figure data-aos="fade-up">
-                            <Image src={image} alt="accountant_img" width={480} height={480} className="rounded-[20px] md:mx-0 mx-auto"/>
+                            <Image src={image} alt="accountant_img" width={480} height={480} className="rounded-[20px] md:mx-0 mx-auto" />
                         </figure>
                     </div>
                     <div className="xl:w-[34%] lg:w-[42%] md:w-[46%] w-full">
@@ -28,17 +29,17 @@ const GenericBox = ({title,description,image,countValue1,countValue2,countValue1
                         <div className="flex md:justify-between justify-center md:gap-0 gap-6">
                             <div data-aos="fade-up">
                                 <div> <NumberTicker
-                                    value={`${countValue1}`}
+                                    value={parseInt(countValue1)}
                                     className="whitespace-pre-wrap lg:text-[24px] text-[20px] font-bold text-black "
                                 /></div>
                                 <span className="inline-block lg:text-sm text-[12px]">{countValue1dec}</span>
                             </div>
                             <div data-aos="fade-up">
                                 <div> <NumberTicker
-                                    value={`${countValue2}`}
+                                    value={parseInt(countValue2)}
                                     className="whitespace-pre-wrap lg:text-[24px] text-[20px] font-bold text-black "
                                 />
-                                <span className="whitespace-pre-wrap lg:text-[24px] text-[20px] font-bold text-black ">%</span>
+                                    <span className="whitespace-pre-wrap lg:text-[24px] text-[20px] font-bold text-black ">%</span>
                                 </div>
                                 <span className="inline-block lg:text-sm text-[12px]">{countValue2dec}</span>
                             </div>
