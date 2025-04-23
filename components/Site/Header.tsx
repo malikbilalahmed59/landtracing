@@ -41,7 +41,7 @@ const Header = () => {
                                 <span className="sr-only">Toggle navigation menu</span>
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="left" className="lg:hidden !borde-0 bg-[var(--cyan-blue)] p-5">
+                        <SheetContent side="left" className="lg:hidden !border-0 bg-[var(--cyan-blue)] p-5">
                             <div className="grid gap-4 p-4">
                                 {navLinks.map((link, index) => (
                                     <Link

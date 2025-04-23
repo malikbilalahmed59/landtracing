@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] md:px-[38px] sm:px-[32px] px-[24px] 2xl:py-[15px] sm:py-[13px] py-[10px] transition-all duration-300 ease-in-out  " +
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[12px] md:px-[38px] sm:px-[32px] px-[24px] 2xl:py-[15px] sm:py-[13px] py-[10px]  " +
     "xl:text-base text-sm font-semibold transition-all disabled:pointer-events-none disabled:opacity-50" +
     " [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0" +
     " outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] " +
@@ -14,13 +14,13 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-white  hover:bg-white hover:text-primary hover:-translate-y-[5px] ",
+          "bg-primary text-white  hover:bg-white hover:text-primary hover:-translate-y-[5px] transition-all duration-300 ease-in-out  ",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "border bg-background  hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
-          "bg-white text-[var(--primary)] hover:bg-gray-100 hover:-translate-y-[5px] ",
+          "bg-white text-[var(--primary)] hover:bg-gray-100 hover:-translate-y-[5px] transition-all duration-300 ease-in-out ",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 ",
         link: "text-primary underline-offset-4 hover:underline",

@@ -73,7 +73,7 @@ export default function Testimonials() {
         <div className="mx-auto 2xl:pt-[80px] lg:pt-[70px] sm:pt-[50px] pt-[40px] 2xl:pb-[120px] xl:pb-[100px] lg:pb-[90px] sm:pb-[70px] pb-[50px]">
             <div className="container mx-auto 2xl:px-0 sm:px-[30px] px-[20px]">
                 <div className="relative">
-                    <Carousel setApi={setApi} className="w-full">
+                    <Carousel setApi={setApi} className="w-full " data-aos="fade-up">
                         <CarouselContent>
                             {testimonials.map((testimonial, index) => (
                                 <CarouselItem key={index} className="">

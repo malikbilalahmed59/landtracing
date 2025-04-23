@@ -51,13 +51,14 @@ const Services = () => {
     return (
         <section className="w-full 2xl:pt-[120px] xl:pt-[100px] lg:pt-[90px] sm:pt-[70px] pt-[50px] 2xl:pb-[80px] lg:pb-[70px] sm:pb-[50px] pb-[40px]">
             <div className="container mx-auto 2xl:px-0 sm:px-[30px] px-[20px]">
-                <div className="bg-[url(/images/marketing-img.jpeg)] rounded-[20px] xl:h-[450px] md:h-[400px] sm:h-[350px] h-[400px] md:px-[40px] px-[20px] md:pb-[40px] pb-[20px] mb-[20px]">
+                <div data-aos="fade-up" className="bg-[url(/images/marketing-img.jpeg)] rounded-[20px] xl:h-[450px] md:h-[400px] sm:h-[350px] h-[400px] md:px-[40px] px-[20px] md:pb-[40px] pb-[20px] mb-[20px]">
                     {/*<figure>*/}
                     {/*    <Image src={data.image.src} alt={data.image.alt} width={1920} height={453} className="rounded-[20px] h-[450px] object-cover"/>*/}
                     {/*</figure>*/}
                     <div className="flex sm:items-end sm:justify-between justify-end h-full text-white sm:flex-row flex-col sm:gap-0 gap-4">
                         <div className="lg:w-[55%] sm:w-[75%]">
-                            <h3 className="2xl:text-[45px] xl:text-[40px] lg:text-[36px] md:text-[32px] sm:text-[28px] text-[24px] font-medium 2xl:leading-[58px] xl:leading-[48px] md:leading-[42px] leading-[30px] ">{data.title}</h3>
+                            <h3 className="2xl:text-[45px] xl:text-[40px] lg:text-[36px]
+                             md:text-[32px] sm:text-[28px] text-[24px] font-medium 2xl:leading-[58px] xl:leading-[48px] md:leading-[42px] leading-[30px] ">{data.title}</h3>
                         </div>
                         <div>
                             <div className="font-semibold xl:text-[28px] sm:text-[24px] text-[20px] sm:leading-[28px] leading-[20px] mb-1">{data.experience.years}</div>
@@ -67,7 +68,7 @@ const Services = () => {
                 </div>
                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
                         {services.map((service, index) => (
-                            <div key={index} className="bg-white rounded-[20px] p-[30px] border border-transparent hover:border-[var(--cyan-blue)] transition-all duration-300 ease-in-out group">
+                            <div data-aos="fade-up" key={index} className="bg-white rounded-[20px] p-[30px] border border-transparent hover:border-[var(--cyan-blue)] transition-all duration-300 ease-in-out group">
                                 {/*<figure>*/}
                                 {/*    <Image src={service.image.src} alt={service.image.alt} />*/}
                                 {/*</figure>*/}
