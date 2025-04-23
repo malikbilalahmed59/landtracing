@@ -49,7 +49,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="w-full py-[120px]">
+        <section className="w-full pt-[120px] pb-[80px]">
             <div className="container mx-auto">
                 <div className="bg-[url(/images/marketing-img.jpeg)] rounded-[20px] h-[450px] px-[40px] pb-[40px] mb-[20px]">
                     {/*<figure>*/}
