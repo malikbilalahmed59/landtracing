@@ -48,7 +48,8 @@
   --light-color: #f0ece4;
   --purple-color: #4c3a57;
   --cyan-blue:#00424d;
-  /*--radius: 0.625rem;*/
+  --Off-White:#f8f7f3;
+    /*--radius: 0.625rem;*/
   /*--background: oklch(1 0 0);*/
   /*--foreground: oklch(0.145 0 0);*/
   /*--card: oklch(1 0 0);*/
@@ -123,9 +124,15 @@
   body {
     font-weight: 400;
     font-family: "Barlow", sans-serif;
+    background: var(--Off-White);
   }
 
 }
 .container{
   max-width: 1260px;
+}
+@layer utilities {
+  .invert-bright {
+    filter: brightness(0) invert(1);
+  }
 }
