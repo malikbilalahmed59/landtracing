@@ -12,7 +12,7 @@ const data = {
     buttons: {
         primary: {
             label: "Start Your Search",
-            href: "/get-started",
+            href: "https://app.landtracing.com/login",
         },
         secondary: {
             label: "Contact Our Experts",

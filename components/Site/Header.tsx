@@ -40,7 +40,7 @@ const Header = () => {
                 </nav>
                 <div className="flex items-center lg:gap-0 gap-2">
                     <Link
-                        href="#contact"
+                        href="https://app.landtracing.com/"
                         className="max-xsm:hidden bg-white inline-block font-semibold rounded-[10px]
                         2xl:p-[11px_46px] lg:p-[11px_36px] sm:p-[9px_26px] p-[9px_26px] xl:text-base sm:text-sm text-[12px]
                         hover:bg-gray-100 transition-all duration-300 ease-in-out hover:-translate-y-[5px]"
