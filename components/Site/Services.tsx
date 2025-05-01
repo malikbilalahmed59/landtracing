@@ -52,12 +52,7 @@ const Services = () => {
                                 {data.title}
                             </h3>
                         </div>
-                        <div>
-                            <div className="font-semibold xl:text-[28px] sm:text-[24px] text-[20px] sm:leading-[28px] leading-[20px] mb-1">
-                                {data.experience.years}
-                            </div>
-                            <span className="block lg:text-sm text-[12px]">{data.experience.description}</span>
-                        </div>
+
                     </div>
                 </div>
 
