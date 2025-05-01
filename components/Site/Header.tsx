@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Logo from "@/public/images/logo.svg"; // SVG logo in /public/images/
+import Logo from "@/public/images/logo.png"; // SVG logo in /public/images/
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { SVGProps } from "react";
 
